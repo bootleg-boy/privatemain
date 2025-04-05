@@ -1,0 +1,140 @@
+.header{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.myNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vh;
+    width: 94%;
+    font-family: Helvetica;
+    font-weight: bolder;
+    list-style: none;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo{
+    font-size: 3pc;
+}
+
+.myNav img {
+    width: 150px; 
+    height: auto; 
+}
+
+/* Footer */
+
+.myFooter{
+  width: 100%;
+  font-family: Helvetica;
+  font-weight: bold;  
+  font-size: 1pc;
+  height: 10%;
+  background-color: #2A2A2A;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.myFooter span {
+    display: flex;
+    font-size: 1pc;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.etc {
+    background-color: rgb(79, 184, 163);
+}
+
+
+.burger-menu {
+    font-size: 34px;
+    cursor: pointer;
+}
+.welcome {
+    flex-grow: 1;  /* Takes up remaining space */
+    text-align: center; /* Centers the text */
+}
+
+/*Eyes Section*/
+.eyesContainer {
+    display: flex;
+    background: white;
+    border-radius: 48px;
+    width: auto;
+    padding: 1em 2em;
+}
+
+.eyesContainer .eyes {
+position: relative;
+width: 50px;
+height: 50px;
+display: block;
+background-color: #fff;
+margin: 0 -10px;
+border-radius: 50%;
+border: 2px solid black;
+}
+.eyes:first-child{
+  z-index:9
+ }
+.eyesContainer .eyes::before {
+content: "";
+top: 50%;
+left: 35px;
+transform: translate(-50%, -50%);
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #000;
+position: absolute;
+box-sizing: border-box;
+}
+
+/* Horizontal Scroll Text */
+.wrap{
+    margin-top: 6%;
+}
+.line {
+    width: 100vw;
+  }
+  .left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color:rgb(79, 184, 163);
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: black;
+    transform: skew(0deg, 15deg);
+  }
+  .left .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  span {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+  }
